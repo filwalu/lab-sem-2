@@ -7,43 +7,56 @@
     <title>My website</title>
     
     <style>
-       
-       body {padding: 0px; margin: 0px; font-family: sans-serif; font-size: medium; box-sizing: border-box;}
+        *{box-sizing: border-box;}
+        body {padding: 0 0; margin: 0; font-family: "Inter" , sans-serif;}
+       div {margin 0; padding-top: 200px;}
        h1 {font-size: 50px;}
        h4 {font-size: 30px;}
-       header {display: flex; background-color: lightgrey; position: relative; 
-                top: 100%; box-shadow: 0 0 10px 2px #aaa; padding: 20px 120px; width: 1920px; left: 0%; top: 100%;flex-wrap: wrap; justify-content: flex-end; flex-direction: row; align-items: center; height: 100%;}
-       table {border: 1px #000000 solid;size: 100px 100px;}
-       td {border: 1px solid #000000; } 
+       header {position: sticky; height: 100%; background-color: lightgray; top 0; left: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;
+        box-shadow: 0 0 10px 2px #aaa;padding-left: 20px;padding-right: 120px;z-index: 100;}
+        header nav ul {flex-direction: row; list-style: none; display: flex; gap: 100px; }
+        header ul nav li:first-child{display: flex;position: relative; margin-left: 0;}
+        .header1  {margin}
+       
+
+       table {border: 1px #000000 solid}
+       th {align-items: center;}
+       td {border: 1px solid #000000; padding: 0%; } 
        tr {border: #000000 1px solid;}
+      
 
 
     </style>
 </head>
 
 <body>
-
-    
-    <header>
+<div class="header1">
+    <div class="Filip">
+        <header>
         
+        <h2>Filip Walat</h2>
+    </div>
+</div>
+        <nav>
         <ul>
-        <li>Filip Walat</li>
-            <li> <a href="#">Strona główna</a> </li>
+        <li> <a href="#">Strona główna</a> </li>
         <li> <a href="kontakt/index.html">Kontakt</a></li>
         <li> <a href="gry/index.html">Ulubione gry</a></li>
         </ul>
+    </nav>
     </header>
-   
-    <nav>
+</div>
+
+    <article>
     <h1>Krótki wstęp o mnie</h1>
     <p>Jestem Filip, studiuje informatyke.</p>
      <h3>Moje wykształcenie </h3>
      <b>Ukończyłem gimnazjum w Rzeszowie<br></b>
      <b>Ukończyłem <i>Liceum Ogólnokształcące w Rzeszowie</i></b>  
+    </article>
     
-    </nav>
 <section>
-<article></article>
+<article>
     <h4>Moje ulubione seriale</h4>
      <b>
         Breaking Bad <a href = https://www.filmweb.pl/serial/Breaking+Bad-2008-430668 > Breaking Bad <br></a>
@@ -52,16 +65,13 @@
     </b>
 </article>
 <img src="https://fwcdn.pl/cwpo/00/18/18/13.3.jpg"/>
-<article></article>   
+<article>   
 <h3>Ranking ulubionych gier komputerowych</h3>
     <ol>
         <li>Civ VI</li>
         <li>Battlefield 4</li>
         <li>Hell let loose</li>
         <li>Fortnite</li>
-
-
-
     </ol>
 </article> 
 <article>
@@ -73,8 +83,9 @@
        <li>Gra w szachy</li> 
     </ul>
 </article>
-<aside></aside>    
-<table>
+<aside>  
+
+    <table>
         <tr>
             <th>Moje wykształcenie</th>
         </tr>
@@ -94,7 +105,9 @@
     <section>
     </table>
 </aside>  
-<table>
+<article>
+    <h4>Pusta tabelka</h4>
+    <table BORDER=1 WIDTH=100px HEIGHT=100px>
     <tr>
         <td></td>
         <td rowspan="2"></td>
@@ -108,7 +121,7 @@
     
     <tr>
         <td></td>
-        <td colspan="2",rowspan="2"></td>
+        <td colspan="2" rowspan="2"></td>
     </tr>
     
     <tr>
@@ -119,7 +132,10 @@
         <td colspan="2"></td>
         <td></td>
     </tr>
+</article>
 </table>
+</div>
+<article>
 </section>
 <h1>Formularz</h1>
 <form action="" method="get">
@@ -134,6 +150,7 @@
 <label for="zgoda"> Czy chcesz dostawać powiadomienia email?</label>
     <button type="button">Wyślij</button>
 </form>
+</article>
 <footer>Filip Walat 2023 67204</footer>
 </body>
 </html>
