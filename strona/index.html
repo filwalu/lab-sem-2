@@ -9,30 +9,35 @@
     <style>
         *{box-sizing: border-box;}
         body {padding: 0 0; margin: 0; font-family: "Inter" , sans-serif;}
-       div {margin 0; padding-top: 200px;}
+       div {margin: 0; padding-top: 200px;}
        h1 {font-size: 50px;}
        h4 {font-size: 30px;}
-       header {position: sticky; height: 100%; background-color: lightgray; top 0; left: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;
+       header {position: sticky; height: 100%; background-color: lightgray; top: 0; left: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;
         box-shadow: 0 0 10px 2px #aaa;padding-left: 20px;padding-right: 120px;z-index: 100;}
-        header nav ul {flex-direction: row; list-style: none; display: flex; gap: 100px; }
-        header ul nav li:first-child{display: flex;position: relative; margin-left: 0;}
-        .header1  {margin}
-       
+        header nav ul {flex-direction: row; list-style: none; display: flex; gap: 20px; justify-content: right; align-items: center;}
+        
+        .header1  {margin: 0;  padding: 0;}
+        .Filip {margin: 0; margin: 0; padding: 0; color: green;}
+       header nav {display: block;}
 
        table {border: 1px #000000 solid}
        th {align-items: center;}
        td {border: 1px solid #000000; padding: 0%; } 
        tr {border: #000000 1px solid;}
-      
+       article {display: block; position: relative; padding: 150px 120px; flex-direction: row; align-items: center; justify-content: center; }
+        section {display: block; padding-top: 0; padding-bottom: 0; padding-left: 120px; padding-right: 120px; font-size: 20px;}
+       aside {display: flex;}
+       .jpgresize{padding-top: 10px; width: 100px; display: flex; height: auto; }
 
 
     </style>
 </head>
 
 <body>
-<div class="header1">
+    <header>
+    <div class="header1">
     <div class="Filip">
-        <header>
+        
         
         <h2>Filip Walat</h2>
     </div>
@@ -56,15 +61,21 @@
     </article>
     
 <section>
-<article>
-    <h4>Moje ulubione seriale</h4>
-     <b>
-        Breaking Bad <a href = https://www.filmweb.pl/serial/Breaking+Bad-2008-430668 > Breaking Bad <br></a>
 
-        Gra o Tron <a href = https://www.filmweb.pl/serial/Gra+o+tron-2011-476848 > Gra o Tron <br></a>
+    
+    <article>
+        <h4>Moje ulubione seriale</h4>
+    <b>
+        <a href = https://www.filmweb.pl/serial/Breaking+Bad-2008-430668 > Breaking Bad <br></a>
+
+        <a href = https://www.filmweb.pl/serial/Gra+o+tron-2011-476848 > Gra o Tron <br></a>
     </b>
+    <div class="jpgresize">
+    <img src="https://fwcdn.pl/cwpo/00/18/18/13.3.jpg"/>
+    </div>
 </article>
-<img src="https://fwcdn.pl/cwpo/00/18/18/13.3.jpg"/>
+
+</aside>
 <article>   
 <h3>Ranking ulubionych gier komputerowych</h3>
     <ol>
@@ -83,7 +94,7 @@
        <li>Gra w szachy</li> 
     </ul>
 </article>
-<aside>  
+<article>  
 
     <table>
         <tr>
@@ -104,8 +115,8 @@
         </tr>
     <section>
     </table>
-</aside>  
-<article>
+</article>  
+<p>
     <h4>Pusta tabelka</h4>
     <table BORDER=1 WIDTH=100px HEIGHT=100px>
     <tr>
@@ -132,11 +143,12 @@
         <td colspan="2"></td>
         <td></td>
     </tr>
-</article>
+
 </table>
-</div>
-<article>
+
+</p>
 </section>
+<article>
 <h1>Formularz</h1>
 <form action="" method="get">
 <label>Name:
