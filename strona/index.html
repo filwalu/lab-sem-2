@@ -7,27 +7,39 @@
     <title>My website</title>
     
     <style>
+        
         *{box-sizing: border-box;}
         body {padding: 0 0; margin: 0; font-family: "Inter" , sans-serif;}
-       div {margin: 0; padding-top: 200px;}
        h1 {font-size: 50px;}
        h4 {font-size: 30px;}
+       article h4::after {display: block;width: 100px;height: 7px;background-color: #00cc60; margin-top: 3px;content: "";}
+       
        header {position: sticky; height: 100%; background-color: lightgray; top: 0; left: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;
-        box-shadow: 0 0 10px 2px #aaa;padding-left: 20px;padding-right: 120px;z-index: 100;}
+                box-shadow: 0 0 10px 2px #aaa;padding-left: 20px;padding-right: 120px;z-index: 100;}
         header nav ul {flex-direction: row; list-style: none; display: flex; gap: 20px; justify-content: right; align-items: center;}
-        
+        header nav ul li a {text-decoration: none; color: rgb(66, 153, 156);}
         .header1  {margin: 0;  padding: 0;}
-        .Filip {margin: 0; margin: 0; padding: 0; color: green;}
+        .Filip {margin: 0; margin: 0; padding: 0; color: rgb(30, 199, 30);}
        header nav {display: block;}
+       
+       footer{text-align: center;}
 
        table {border: 1px #000000 solid}
-       th {align-items: center;}
+       
        td {border: 1px solid #000000; padding: 0%; } 
        tr {border: #000000 1px solid;}
-       article {display: block; position: relative; padding: 150px 120px; flex-direction: row; align-items: center; justify-content: center; }
-        section {display: block; padding-top: 0; padding-bottom: 0; padding-left: 120px; padding-right: 120px; font-size: 20px;}
-       aside {display: flex;}
-       .jpgresize{padding-top: 10px; width: 100px; display: flex; height: auto; }
+       
+       article {display: flex; position: relative; padding: 150px 120px; flex-direction: row; align-items: center; justify-content: space-between; }
+       .article-element {width: 50%; }
+       .obrazek {margin: 0; display: flex; align-items: centers;}
+       section {display: block; padding-top: 0; padding-bottom: 0; padding-left: 120px; padding-right: 120px; font-size: 20px;}
+       .main-section{float:right; float:; position: relative;;}
+       .main-section::before {content: ""; position: absolute;top: 0;left: 0;display: block;width: 100%;margin: 0 auto; overflow: hidden;}
+       .main-section::after {}
+       .przycisk {margin-left: 450px; margin-top: -100px; padding-top: -0px -100px;}
+       
+       
+       
 
 
     </style>
@@ -51,51 +63,62 @@
     </nav>
     </header>
 </div>
-
-    <article>
-    <h1>Krótki wstęp o mnie</h1>
-    <p>Jestem Filip, studiuje informatyke.</p>
-     <h3>Moje wykształcenie </h3>
-     <b>Ukończyłem gimnazjum w Rzeszowie<br></b>
-     <b>Ukończyłem <i>Liceum Ogólnokształcące w Rzeszowie</i></b>  
-    </article>
-    
+</div>
+<div>
 <section>
+    <h1>Krótki wstęp o mnie</h1>
+    <p >Jestem Filip, studiuje informatyke. W wolnym czasie lubię oglądać seriale i grać na komputerze.</p>
+    <img class="main-section" src="jpg/main.jpg" style="height: auto; width: 500px;">
+</section>
+</div>
+    
+    <article>
+    <h3 class="article-element">Moje wykształcenie </h3>
+     <p class="article-element">
+        Ukończyłem gimnazjum w Rzeszowie<br>
+     <b>Ukończyłem <i>Liceum Ogólnokształcące w Rzeszowie</i>
+    </p>  
+</article>
 
     
     <article>
-        <h4>Moje ulubione seriale</h4>
-    <b>
+        <h4 class="article-element">Moje ulubione seriale</h4>
+    <p class="article-element">
         <a href = https://www.filmweb.pl/serial/Breaking+Bad-2008-430668 > Breaking Bad <br></a>
 
         <a href = https://www.filmweb.pl/serial/Gra+o+tron-2011-476848 > Gra o Tron <br></a>
-    </b>
-    <div class="jpgresize">
-    <img src="https://fwcdn.pl/cwpo/00/18/18/13.3.jpg"/>
-    </div>
+    </p>
+    
+    <img class="obrazek" src="jpg/obrazek.jpg"/>
+    
 </article>
 
-</aside>
-<article>   
-<h3>Ranking ulubionych gier komputerowych</h3>
-    <ol>
+
+
+<article>  
+
+<h3 class="article-element">Ranking ulubionych gier komputerowych</h3>
+    <ol class="article-element">
         <li>Civ VI</li>
         <li>Battlefield 4</li>
         <li>Hell let loose</li>
         <li>Fortnite</li>
     </ol>
 </article> 
+
 <article>
-<h3>Moje zainteresowania</h3>
-    <ul>
+<h3 class="article-element">Moje zainteresowania</h3>
+    <ul class="article-element">
        <li>Granie na komputerze</li> 
        <li>Programowanie</li> 
        <li>Słuchanie muzyki</li> 
        <li>Gra w szachy</li> 
     </ul>
 </article>
-<article>  
 
+<article> 
+
+<h3 class="article-element">Tabelka przedstawiająca moją drogę edukacji.</h3>
     <table>
         <tr>
             <th>Moje wykształcenie</th>
@@ -113,12 +136,15 @@
             <td> 2022-teraz</td>
             <td>WSIIZ</td>
         </tr>
-    <section>
+    
     </table>
+
+ 
 </article>  
-<p>
-    <h4>Pusta tabelka</h4>
-    <table BORDER=1 WIDTH=100px HEIGHT=100px>
+
+<section>
+    <h4 class="article-element">Pusta tabelka</h4>
+    <table  BORDER=1 WIDTH=100px HEIGHT=100px>
     <tr>
         <td></td>
         <td rowspan="2"></td>
@@ -146,9 +172,10 @@
 
 </table>
 
-</p>
 </section>
-<article>
+
+
+<section class="formularz">
 <h1>Formularz</h1>
 <form action="" method="get">
 <label>Name:
@@ -158,11 +185,13 @@
     <label>Email:
         <input type="xyz"/>
     </label><br>
-    <input type="checkbox" id="zgoda" name="zgoda" value="zgodaa">
+    
 <label for="zgoda"> Czy chcesz dostawać powiadomienia email?</label>
-    <button type="button">Wyślij</button>
+<input type="checkbox" id="zgoda" name="zgoda" value="zgodaa"></form><br>
+    <button class="przycisk" type="button">Wyślij</button>
 </form>
-</article>
+</section>
+
 <footer>Filip Walat 2023 67204</footer>
 </body>
 </html>
