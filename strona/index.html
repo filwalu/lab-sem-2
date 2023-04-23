@@ -5,43 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-    
+    <link href="css/style.css" rel="stylesheet"/>
     <style>
-        
-        *{box-sizing: border-box;}
-        body {padding: 0 0; margin: 0; font-family: "Inter" , sans-serif;}
-       h1 {font-size: 50px;}
-       h4 {font-size: 30px;}
-       article h4::after {display: block;width: 100px;height: 7px;background-color: #00cc60; margin-top: 3px;content: "";}
-       
-       header {position: sticky; height: 100%; background-color: lightgray; top: 0; left: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;
-                box-shadow: 0 0 10px 2px #aaa;padding-left: 20px;padding-right: 120px;z-index: 100;}
-        header nav ul {flex-direction: row; list-style: none; display: flex; gap: 20px; justify-content: right; align-items: center;}
-        header nav ul li a {text-decoration: none; color: rgb(66, 153, 156);}
-        .header1  {margin: 0;  padding: 0;}
-        .Filip {margin: 0; margin: 0; padding: 0; color: rgb(30, 199, 30);}
-       header nav {display: block;}
-       
-       footer{text-align: center;}
-
-       table {border: 1px #000000 solid}
-       
-       td {border: 1px solid #000000; padding: 0%; } 
-       tr {border: #000000 1px solid;}
-       
-       article {display: flex; position: relative; padding: 150px 120px; flex-direction: row; align-items: center; justify-content: space-between; }
-       .article-element {width: 50%; }
-       .obrazek {margin: 0; display: flex; align-items: centers;}
-       section {display: block; padding-top: 0; padding-bottom: 0; padding-left: 120px; padding-right: 120px; font-size: 20px;}
-       .main-section{float:right; float:; position: relative;;}
-       .main-section::before {content: ""; position: absolute;top: 0;left: 0;display: block;width: 100%;margin: 0 auto; overflow: hidden;}
-       .main-section::after {}
-       .przycisk {margin-left: 450px; margin-top: -100px; padding-top: -0px -100px;}
-       
-       
-       
-
-
+   
     </style>
 </head>
 
@@ -56,7 +22,7 @@
 </div>
         <nav>
         <ul>
-        <li> <a href="#">Strona główna</a> </li>
+        <li> <a class="stronag" href="#">Strona główna</a> </li>
         <li> <a href="kontakt/index.html">Kontakt</a></li>
         <li> <a href="gry/index.html">Ulubione gry</a></li>
         </ul>
@@ -64,19 +30,20 @@
     </header>
 </div>
 </div>
-<div>
-<section>
-    <h1>Krótki wstęp o mnie</h1>
+
+<section class="main-section">
+    <img class="main-section" src="jpg/main.jpg" style="height: auto; width:700px; margin-top:-10px;">
+    <h4>Krótki wstęp o mnie</h4>
     <p >Jestem Filip, studiuje informatyke. W wolnym czasie lubię oglądać seriale i grać na komputerze.</p>
-    <img class="main-section" src="jpg/main.jpg" style="height: auto; width: 500px;">
-</section>
-</div>
     
-    <article>
+</section>
+
+    
+    <article class="aftermain">
     <h3 class="article-element">Moje wykształcenie </h3>
      <p class="article-element">
         Ukończyłem gimnazjum w Rzeszowie<br>
-     <b>Ukończyłem <i>Liceum Ogólnokształcące w Rzeszowie</i>
+     <b>Ukończyłem <i>Liceum Ogólnokształcące w Rzeszowie</i></b>
     </p>  
 </article>
 
@@ -116,7 +83,7 @@
     </ul>
 </article>
 
-<article> 
+<section> 
 
 <h3 class="article-element">Tabelka przedstawiająca moją drogę edukacji.</h3>
     <table>
@@ -140,7 +107,7 @@
     </table>
 
  
-</article>  
+</section>  
 
 <section>
     <h4 class="article-element">Pusta tabelka</h4>
